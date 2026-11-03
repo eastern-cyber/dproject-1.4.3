@@ -29,7 +29,7 @@ export default function Home() {
     return (
       <main className="min-h-screen w-full flex flex-col">
       <div className={theme === 'dark' ? 'bg-[#110033] text-amber-100' : 'bg-gray-50 text-gray-900'}>
-        <div className="flex-grow flex flex-col items-center justify-center py-20 w-full">
+        <div className="grow flex flex-col items-center justify-center py-20 w-full">
           <Header />
           <div className="my-8 w-full flex justify-center">
             <ThirdwebResources />
@@ -45,17 +45,17 @@ export default function Home() {
 
   return (
     <div className="min-h-screen w-full flex flex-col">
-      <div className="flex-grow flex flex-col items-center justify-center p-5 w-full">
+      <div className="grow flex flex-col items-center justify-center p-5 w-full">
         <div className="flex flex-col items-center justify-center p-5 border border-gray-300 rounded-lg max-w-md w-full">
           <Image
             src={dprojectIcon}
             alt=""
-            className="size-[150px] md:size-[150px] mb-6"
+            className="size-37.5 md:size-37.5 mb-6"
             style={{
               filter: "drop-shadow(0px 0px 24px #a726a9a8)",
             }}
           />
-          <p className="pt-2">Version 1.4.2</p>
+          <p className="pt-2">Version 1.4.3</p>
           <div className="flex justify-center mb-2">
           <WalletConnect />
           </div>
@@ -70,7 +70,7 @@ export default function Home() {
                     href="/member-area"
                     className="flex flex-col border bg-zinc-800 border-zinc-500 px-4 py-3 rounded-lg hover:bg-[#6890000] transition-colors hover:border-zinc-300 w-full text-center"
                   >
-                    <span className="text-lg break-words block">เข้าสู่พื้นที่สมาชิก</span>
+                    <span className="text-lg wrap-break-words block">เข้าสู่พื้นที่สมาชิก</span>
                   </Link>
                 </div>
               </div>
@@ -95,7 +95,7 @@ function Header() {
         <Image
           src={dprojectIcon}
           alt="DProject"
-          className="size-[150px] md:size-[150px]"
+          className="size-37.5 md:size-37.5"
           style={{
             filter: "drop-shadow(0px 0px 24px #a726a9a8)",
           }}
@@ -112,7 +112,7 @@ function Header() {
         <span className="inline-block -skew-x-6 text-gray-500"> Register </span>
       </p>
       <p className="text-xl text-center text-zinc-400 mb-6">
-        Version 1.4.2
+        Version 1.4.3
       </p>
       <p className="text-center text-zinc-500 text-base mb-8 max-w-2xl px-4">
         ล็อกอินด้วยอีเมลล์{" "}
