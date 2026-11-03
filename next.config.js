@@ -1,3 +1,17 @@
+// next.config.js
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'polygonscan.com',
+        port: '',
+        pathname: '/token/images/**',
+      },
+    ],
+  },
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
