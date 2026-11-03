@@ -1179,7 +1179,7 @@ export default function PlanB() {
             style={{ filter: "drop-shadow(0px 0px 24px #a726a9a8" }}
           />
         </Link>
-        <p className="pt-2">Version 1.4.2</p>
+        <p className="pt-2">Version 1.4.3</p>
         <h1 className="p-4 text-1xl md:text-3xl text-2xl font-semibold md:font-bold tracking-tighter">
           ยืนยันการเข้าร่วม Plan B D1
         </h1>
@@ -1905,7 +1905,7 @@ export default function PlanB() {
           onClose={handleCloseSuccessModal}
           disableClose={false}
         >
-          <div className="p-6 bg-gradient-to-br from-green-900 to-emerald-900 rounded-lg border border-emerald-700 max-w-md">
+          <div className="p-6 bg-linear-to-br from-green-900 to-emerald-900 rounded-lg border border-emerald-700 max-w-md">
             <div className="text-center mb-6">
               {/* Success Icon */}
               <div className="mx-auto w-20 h-20 bg-emerald-500 rounded-full flex items-center justify-center mb-4">
@@ -2026,7 +2026,7 @@ const WalletPublicKey: React.FC<{ walletAddress?: string }> = ({ walletAddress }
             {walletAddress ? `https://dfi.fund/referrer/${walletAddress}` : "ยังไม่ได้เชื่อมกระเป๋า !"}
           </p>    
         </div>
-        <span className="text-center mt-4 text-[20px] break-words">เพื่อส่งให้ผู้มุ่งหวัง ที่ท่านต้องการแนะนำ</span>
+        <span className="text-center mt-4 text-[20px] wrap-break-words">เพื่อส่งให้ผู้มุ่งหวัง ที่ท่านต้องการแนะนำ</span>
       </div>
     </div>
   )
