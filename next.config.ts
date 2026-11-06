@@ -28,6 +28,12 @@ const nextConfig: NextConfig = {
         hostname: "ipfs.io",
         pathname: "/ipfs/**",
       },
+      // Pinata public gateway (used for KTDFI token icon)
+      {
+        protocol: "https",
+        hostname: "gateway.pinata.cloud",
+        pathname: "/ipfs/**",
+      },
     ],
   },
 
