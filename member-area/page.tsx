@@ -241,8 +241,7 @@ const WalletBalances: React.FC<walletAddresssProps> = ({ walletAddress }) => {
                         width={24}
                         height={24}
                         className="h-6 w-6 rounded-full mr-1"
-                        // Replace ipfs.io with a working gateway domain
-                        src="https://gateway.pinata.cloud/ipfs/QmSLo5e3PSBWgF3wysabPzsBjoRLngrFoVNrGwgL3vm2Zn/KTDFI_600x600.png"
+                        src="/tokens/KTDFI_600x600.png"
                         alt="KTDFI Token"
                     />
                     เหรียญ KTDFI: {walletAddress ?
