@@ -44,7 +44,7 @@ const WalletConnect: React.FC = () => {
                             address: "0x532313164FDCA3ACd2C2900455B208145f269f0e",
                             name: "KlongThai DFI",
                             symbol: "KTDFI",
-                            icon: "https://ipfs.io/ipfs/QmSLo5e3PSBWgF3wysabPzsBjoRLngrFoVNrGwgL3vm2Zn/KTDFI_600x600.png",
+                            icon: "/tokens/KTDFI_600x600.png",
                         },
                         {
                             address: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
