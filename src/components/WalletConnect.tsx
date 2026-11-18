@@ -7,7 +7,6 @@ import { chain } from "@/lib/chain";
 import { client } from "@/lib/client";
 import React from "react";
 import {
-    inAppWallet,
     createWallet,
 } from "thirdweb/wallets";
 
@@ -18,17 +17,11 @@ const WalletConnect: React.FC = () => {
                 locale={"en_US"} 
                 client={client}
                 chain={chain}
-                wallets={[ inAppWallet ({
-                auth: {
-                    options: [
-                        "email",
-                    ]
-                    }
-                }), 
-                        createWallet("io.metamask"), // This is how you add MetaMask
-                        createWallet("com.trustwallet.app"),
-                        createWallet("com.bitget.web3")         
-                    ]}
+                wallets={[
+                    createWallet("io.metamask"), // This is how you add MetaMask
+                    createWallet("com.trustwallet.app"),
+                    createWallet("com.bitget.web3")         
+                ]}
                 connectModal={{
                     title: "เชื่อมต่อกระเป๋า",
                     titleIcon: "https://dfi.fund/_next/static/media/DFastLogo_650x600.4f2ec315.svg",
